@@ -11,7 +11,7 @@ export default function Project({project}) {
         {project.technologies.map(tech => { return (<div>{tech}</div>); })}
         </section>
         <section>
-            <img src={project.src} alt={project.alt} />
+            <img src={project.src} alt={project.alt}></img>
         </section>
     </div>
   );
