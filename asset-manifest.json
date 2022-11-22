@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.6a23ef1e.css",
+    "main.js": "/React-Portfolio/static/js/main.a3e41b1d.js",
+    "static/js/787.510e8dec.chunk.js": "/React-Portfolio/static/js/787.510e8dec.chunk.js",
+    "static/media/my-face.png": "/React-Portfolio/static/media/my-face.9fa3420d0b9077054395.png",
+    "static/media/Dylan-Godfrey.pdf": "/React-Portfolio/static/media/Dylan-Godfrey.6dca635f6558883f409c.pdf",
+    "index.html": "/React-Portfolio/index.html",
+    "main.6a23ef1e.css.map": "/React-Portfolio/static/css/main.6a23ef1e.css.map",
+    "main.a3e41b1d.js.map": "/React-Portfolio/static/js/main.a3e41b1d.js.map",
+    "787.510e8dec.chunk.js.map": "/React-Portfolio/static/js/787.510e8dec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a23ef1e.css",
+    "static/js/main.a3e41b1d.js"
+  ]
+}
