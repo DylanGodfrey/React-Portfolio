@@ -1,18 +1,26 @@
 import React from 'react';
 
+import { Card, Image, Button, ButtonGroup } from 'semantic-ui-react';
+
 export default function Project({project}) {
   return (
-    <div>
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
-      <a className="btn" href={project.github}>View GitHub</a>
-      <a className="btn" href={project.deployed}>View Deployed Application</a>
-      <section className="technologies">
-        {project.technologies.map(tech => { return (<div>{tech}</div>); })}
-        </section>
-        <section>
-            <img src={project.src} alt={project.alt}></img>
-        </section>
-    </div>
+    <Card fluid>
+      <Card.Header>{project.title}</Card.Header>
+      <Card.Description>{project.description} </Card.Description>
+      <Card.Content extra>
+        <ButtonGroup>
+        {project.technologies.map(tech => { return (<Button>{tech}</Button>); })}
+        </ButtonGroup>
+        </Card.Content>
+        <Image src={project.src} alt={project.alt} />
+        <Card.Content extra>
+        <Button inverted color='blue'>
+        <a  href={project.github}>View GitHub</a>
+        </Button>
+        <Button inverted color='blue'>
+        <a  href={project.deployed}>View Deployed Application</a>
+        </Button>
+        </Card.Content>
+    </Card>
   );
 }

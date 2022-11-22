@@ -1,7 +1,7 @@
-import './App.css';
-
 // Import state management
 import { useState } from 'react';
+
+import './App.css'
 
 // Import components and pages
 import Nav from './components/Nav';

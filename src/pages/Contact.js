@@ -34,7 +34,6 @@ export default function Contact() {
       label='Leave a message!'
       placeholder='Type here...'
     />
-
     <Form.Field
       id='form-button-control-public'
       control={Button}

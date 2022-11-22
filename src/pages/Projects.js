@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../components/Project';
 
+import { Card } from 'semantic-ui-react'
 
 
 const projects = [  
@@ -63,9 +64,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <article className="portfolio">
-      <h2>Portfolio</h2>
-      {projects.map(project => {return ( <Project project={project}/>); })}
-  </article>
+      <Card.Group>
+        {projects.map(project => {return ( <Project project={project}/>); })}
+      </Card.Group>
   );
 }
