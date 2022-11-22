@@ -1,7 +1,7 @@
 # React Portfolio
 This is my Portfolio built using React, showing all the progress I've made in my career. It shows six recent projects, their repos/deployments and my resume (available for download).
 
-[Live Application](https://DylanGodfrey.github.io/react-portfolio/)
+[Live Application](https://DylanGodfrey.github.io/React-Portfolio/)
 ![Screenshot](./assets/samplescreenshot.png)
 
 ## Credits
