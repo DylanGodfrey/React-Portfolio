@@ -1,31 +1,46 @@
 import React from 'react';
+import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+    <Form>
+    <Form.Field
+      id='form-input-control-error-email'
+      control={Input}
+      label='Email'
+      placeholder='joe@schmoe.com'
+      error={{
+        content: 'Please enter a valid email address',
+        pointing: 'below',
+      }}
+    />
+    <Form.Group widths='equal'>
+      <Form.Field
+        id='form-input-control-first-name'
+        control={Input}
+        label='First name'
+        placeholder='First name'
+      />
+      <Form.Field
+        id='form-input-control-last-name'
+        control={Input}
+        label='Last name'
+        placeholder='Last name'
+      />
+    </Form.Group>
+    <Form.Field
+      id='form-textarea-control-opinion'
+      control={TextArea}
+      label='Leave a message!'
+      placeholder='Type here...'
+    />
+
+    <Form.Field
+      id='form-button-control-public'
+      control={Button}
+      content='Confirm'
+      label=''
+    />
+  </Form>
   );
 }
-
-/**
- * 
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
- */
