@@ -4,6 +4,8 @@ import React from 'react';
 // We assign them to their own variable names
 function Nav({ page, setPage }) {
   return (
+    <nav>
+    <h1>Dylan Godfrey</h1>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -47,6 +49,7 @@ function Nav({ page, setPage }) {
         </a>
       </li>
     </ul>
+    </nav>
   );
 }
 
