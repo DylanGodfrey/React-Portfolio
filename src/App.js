@@ -14,7 +14,7 @@ import Contact from './pages/Contact';
 // Root Component
 function App() {
   // State variable to determine current page
-  const [page, setPage] = useState('about');
+  const [page, setPage] = useState("about");
 
   // Render state based on page state
   function RenderPage(){
@@ -23,7 +23,7 @@ function App() {
         return <AboutMe />
       case "projects":
         return <Projects />
-      case "resumes":
+      case "resume":
         return <Resume />
       case "contact":
         return <Contact />

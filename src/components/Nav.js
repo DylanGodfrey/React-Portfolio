@@ -33,13 +33,13 @@ function Nav({ page, setPage }) {
           // Check to see if the page is `resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={page === 'resume' ? 'nav-link active' : 'nav-link'}
         >
-          resume
+          Resume
         </a>
       </li>
       <li className="nav-item">
         <a
           href="#contact"
-          onClick={() => setPage('Contact')}
+          onClick={() => setPage('contact')}
           // Check to see if the page is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={page === 'Contact' ? 'nav-link active' : 'nav-link'}
         >

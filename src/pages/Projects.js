@@ -1,24 +1,51 @@
 import React from 'react';
+import Project from '../components/Project';
+
+const projects = [  
+  {
+  title: "Good Food Reviews",
+  description: "Socialize with other food critics/lovers.",
+  github: "https://github.com/DianasJourney/GoodFoodReviews",
+  technologies: ["Heroku", "Sequelize", "Express", "Handlebars", "SemanticUI"]
+  },
+  {
+    title: "Where2Watch",
+    description: "Easily find out which movies are streaming and on what platform",
+    github: "https://github.com/DylanGodfrey/Where2Watch",
+    technologies: ["Tailwind", "WebAPI"]
+  },
+  {
+    title: "Note-Taker",
+    description: "Keep track of important notes all in one place",
+    github: "https://github.com/DylanGodfrey/Note-Taker",
+    technologies: ["Express"]
+  },
+  {
+    title: "Just Another Text Editor",
+    description: "Let anyone write code with Javascript syntaxing online or off",
+    github: "https://github.com/DylanGodfrey/Just-Another-Text-Editor",
+    technologies: ["Express", "PWA"]
+  },  
+  {
+    title: "Employee Tracker",
+    description: "View, edit and create new employees, roles or departments through the command line.",
+    github: "https://github.com/DylanGodfrey/Employee-Tracker",
+    technologies: ["Inquirer", "MySQL"]
+  },
+  {
+    title: "Social Network API",
+    description: "Share your thoughts and make friends",
+    github: "https://github.com/DylanGodfrey/Social-Network-API",
+    technologies: ["Express", "Mongoose"]
+  }
+]
+
 
 export default function Projects() {
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <article className="portfolio">
+      <h2>Portfolio</h2>
+      {projects.map(project => {return ( <Project project={project}/>); })}
+  </article>
   );
 }
