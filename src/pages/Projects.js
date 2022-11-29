@@ -4,7 +4,16 @@ import Project from '../components/Project';
 import { Card } from 'semantic-ui-react'
 
 
-const projects = [  
+const projects = [
+  {
+    title: "Vapour",
+    description: "Collect and save your favourite games",
+    github: "https://github.com/MichaelSinn/vapour",
+    deployed: "https://vapour-games.herokuapp.com/",
+    src: "https://user-images.githubusercontent.com/109758045/199080164-640ca903-23ed-4bba-b878-5d81105bba88.jpg",
+    alt: "Good Food Reviews",
+    technologies: ["Heroku", "Sequelize", "Express", "JWT", "BulmaUI"]
+    }, 
   {
   title: "Good Food Reviews",
   description: "Socialize with other food critics/lovers.",
